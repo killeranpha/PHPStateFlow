@@ -4,27 +4,27 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit589e8538ea9d63ef6428c9184ff98d57
+class ComposerStaticInit3eebf95289825a83a04352fdb8080906
 {
     public static $prefixLengthsPsr4 = array (
-        'A' => 
+        'P' => 
         array (
-            'App\\' => 4,
+            'PHPStateFlow\\' => 13,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'App\\' => 
+        'PHPStateFlow\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/app',
+            0 => __DIR__ . '/../..' . '/src',
         ),
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit589e8538ea9d63ef6428c9184ff98d57::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit589e8538ea9d63ef6428c9184ff98d57::$prefixDirsPsr4;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit3eebf95289825a83a04352fdb8080906::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit3eebf95289825a83a04352fdb8080906::$prefixDirsPsr4;
 
         }, null, ClassLoader::class);
     }
